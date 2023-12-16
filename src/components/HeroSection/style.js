@@ -7,7 +7,7 @@ export const Hero = styled.section`
   background-image: url(${heroBg});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: calc(50% - -22px ) calc(50% - 78px);
 
   .hero-container {
     margin: 0 auto;
