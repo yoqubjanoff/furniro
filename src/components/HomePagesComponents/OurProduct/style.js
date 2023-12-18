@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const OurStyle = styled.section``;
+export const OurStyle = styled.section`
+padding: 0 0 69px 0;
+`;
 OurStyle.Container = styled.div`
   width: 100%;
   max-width: 1236px;

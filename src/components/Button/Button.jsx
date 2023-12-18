@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 import { MainButton } from "./style";
 
 const Button = ({
@@ -11,7 +11,8 @@ const Button = ({
   border,
   borderradius,
   fontweight,
-  fontsize
+  fontsize,
+  Children
 }) => {
   return (
     <MainButton
@@ -25,7 +26,8 @@ const Button = ({
       fontweight={fontweight}
       fontsize={fontsize}
     >
-      {text || "click"}
+      {text || ""}
+      {Children}
     </MainButton>
   );
 };
