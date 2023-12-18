@@ -5,25 +5,25 @@ const Button = ({
   width,
   color,
   text,
-  backgroundColor,
-  allPadding,
-  allMargin,
+  backgroundcolor,
+  allpadding,
+  allmargin,
   border,
-  borderRs,
-  fontWe,
-  fontSz
+  borderradius,
+  fontweight,
+  fontsize
 }) => {
   return (
     <MainButton
       width={width}
       color={color}
-      backgroundColor={backgroundColor}
-      borderRs={borderRs}
+      backgroundcolor={backgroundcolor}
+      borderradius={borderradius}
       border={border}
-      allPadding={allPadding}
-      allMargin={allMargin}
-      fontWe={fontWe}
-      fontSz={fontSz}
+      allpadding={allpadding}
+      allmargin={allmargin}
+      fontweight={fontweight}
+      fontsize={fontsize}
     >
       {text || "click"}
     </MainButton>

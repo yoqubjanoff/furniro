@@ -1,6 +1,6 @@
 import React from "react";
 import { Hero } from "./style";
-import Button from "../Button/Button";
+import Button from "../../Button/Button";
 
 const HeroSection = () => {
   return (
@@ -15,12 +15,12 @@ const HeroSection = () => {
               tellus, luctus nec ullamcorper mattis.
             </Hero.Desc>
             <Button
-            backgroundColor='#B88E2F' 
-            fontWe='700' 
-            text='BUY NOW' 
-            color="#fff"
-            allPadding='25px 72px'
-            width='222px'
+              backgroundcolor="#B88E2F"
+              fontWeight="700"
+              text="BUY NOW"
+              color="#fff"
+              allpadding="25px 72px"
+              width="222px"
             />
           </Hero.TextBox>
         </Hero.Wrapper>

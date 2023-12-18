@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import heroBg from "../../assets/images/herosectionBg.svg";
+import heroBg from "../../../assets/images/herosectionBg.svg";
 
 export const Hero = styled.section`
   width: 100%;
@@ -7,7 +7,8 @@ export const Hero = styled.section`
   background-image: url(${heroBg});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: calc(50% - -22px ) calc(50% - 78px);
+  background-position: calc(50% - 0px ) calc(50% - 78px);
+  
 
   .hero-container {
     margin: 0 auto;
@@ -39,7 +40,7 @@ Hero.LittleTittle = styled.p`
 `;
 Hero.Tittle = styled.h1`
   width: 100%;
-  max-width: 560px;
+  max-width: 458px;
   color: #b88e2f;
   font-size: 52px;
   font-style: normal;

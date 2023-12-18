@@ -34,9 +34,16 @@ HeaderStyle.Nav = styled.nav`
 HeaderStyle.IconsBox = styled.div`
   display: flex;
   gap: 45px;
+
+  .iconLink {
+  }
+
 `;
 
 HeaderStyle.Icons = styled.img`
   width: 28px;
   height: 28px;
+  cursor: pointer; 
 `;
+
+
