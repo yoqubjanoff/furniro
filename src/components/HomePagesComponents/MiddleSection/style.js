@@ -4,7 +4,6 @@ import middleBgImg from "../../../assets/images/middlesectionImg.svg";
 export const MiddleStyle = styled.section`
   padding: 44px 0;
   background-color: #fcf8f3;
-  position: relative;
 `;
 
 MiddleStyle.Container = styled.div`
@@ -13,6 +12,7 @@ MiddleStyle.Container = styled.div`
   margin: 0 auto;
 `;
 MiddleStyle.Wrapper = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   gap: 42px;
@@ -102,15 +102,60 @@ MiddleStyle.SlideBox = styled.div`
   .mySwiper {
     position: absolute;
     max-width: 372px;
-    height: 486px;
-    top: 44px;
-    right: 306px;
+    height: 532px;
+    top: 0;
+    right: -22px;
   }
   .imgSlide {
     max-width: 372px;
-    height: 450px;
+    height: 486px;
+  }
+  .swiper-pagination {
+    position: absolute;
+    bottom: 12px;
+    left: 52%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  .swiper-pagination-bullet {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #999;
+    opacity: 0.7;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #b88e2f;
+    position: relative;
+  }
+
+  .swiper-pagination-bullet-active:after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-color: transparent;
+    transform: translateY(-50%);
+    border: 1px solid #b88e2f;
+    border-radius: 50%;
+    top: -92%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .swiper-pagination-bullet:before {
+    left: -6px;
+  }
+  .swiper-pagination-bullet:after {
+    right: -6px;
+  }
+  .swiper-pagination span {
+    font-size: 12px;
   }
 `;
+
 MiddleStyle.CustomArrowBox = styled.div`
   position: absolute;
   width: 48px;
@@ -118,14 +163,13 @@ MiddleStyle.CustomArrowBox = styled.div`
   background-color: #fff;
   padding: 12px;
   border-radius: 50px;
-  top: 257px;
-  right: 315px;
-z-index: 10;
-cursor: pointer;
+  top: 197px;
+  right: -43px;
+  z-index: 10;
+  cursor: pointer;
 `;
 MiddleStyle.CustomArrowLeft = styled.img`
   width: 24px;
   height: 24px;
-  
 `;
 MiddleStyle.CustomArrowRight = styled.img``;

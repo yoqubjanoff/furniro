@@ -3,6 +3,7 @@ import HeroSection from '../../components/HomePagesComponents/HeroSection/HeroSe
 import RangeSection from '../../components/HomePagesComponents/RangeSection/RangeSection'
 import OurProduct from '../../components/HomePagesComponents/OurProduct/OurProduct'
 import MiddleSection from '../../components/HomePagesComponents/MiddleSection/MiddleSection'
+import FurnitureSection from '../../components/HomePagesComponents/FurnitureSection/FurnitureSection'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <RangeSection/>
         <OurProduct/>
         <MiddleSection/>
+        <FurnitureSection/>
     </>
   )
 }

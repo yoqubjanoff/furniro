@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import heroBg from "../../../assets/images/herosectionBg.svg";
+import heroBg from "../../../assets/images/heroBgimage.jpg";
 
 export const Hero = styled.section`
   width: 100%;

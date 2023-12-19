@@ -50,9 +50,7 @@ const MiddleSection = () => {
               <MiddleStyle.InneArrow src={arrow} />
             </MiddleStyle.Button>
           </MiddleStyle.ImageBox>
-        </MiddleStyle.Wrapper>
-      </MiddleStyle.Container>
-      <MiddleStyle.SlideBox>
+          <MiddleStyle.SlideBox>
         <Swiper
           ref={swiperRef}
           cssMode={true}
@@ -77,7 +75,17 @@ const MiddleSection = () => {
           </SwiperSlide>
         </Swiper>
         <MiddleStyle.CustomArrowBox
-          onClick={() => swiperRef.current.swiper.slidePrev()}
+          onClick={() => {
+            if (swiperRef.current && swiperRef.current.swiper) {
+              const currentIndex = swiperRef.current.swiper.activeIndex;
+              const totalSlides = swiperRef.current.swiper.slides.length;
+              if (currentIndex < totalSlides - 1) {
+                swiperRef.current.swiper.slideNext();
+              } else {
+                swiperRef.current.swiper.slideTo(0);
+              }
+            }
+          }}
         >
           <img
             src={rightArrow}
@@ -86,6 +94,8 @@ const MiddleSection = () => {
           />
         </MiddleStyle.CustomArrowBox>
       </MiddleStyle.SlideBox>
+        </MiddleStyle.Wrapper>
+      </MiddleStyle.Container>
     </MiddleStyle>
   );
 };
