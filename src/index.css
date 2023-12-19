@@ -3,7 +3,8 @@
   src: url(./assets/fonts/poppins-v20-latin-500.woff2) format("truetype"),
     url(./assets/fonts/poppins-v20-latin-600.woff2) format("truetype"),
     url(./assets/fonts/poppins-v20-latin-700.woff2) format("truetype"),
-    url(./assets/fonts/poppins-v20-latin-regular.woff2) format("truetype");
+    url(./assets/fonts/poppins-v20-latin-regular.woff2) format("truetype"),
+    url(./assets/fonts/poppins-v20-latin-300.woff2) format("truetype");
 }
 
 * {
