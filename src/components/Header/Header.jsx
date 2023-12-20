@@ -69,7 +69,7 @@ const Header = () => {
         onClose={onClose}
         open={open}
         closeIcon={false}
-        height={}
+        // height={}
         extra={
           <Space>
             <HeaderStyle.Icons onClick={onClose} src={bug} alt="user icon" />
