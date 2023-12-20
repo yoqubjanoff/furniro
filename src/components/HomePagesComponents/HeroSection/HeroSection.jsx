@@ -21,6 +21,7 @@ const HeroSection = () => {
               color="#fff"
               allpadding="25px 72px"
               width="222px"
+              height='74px'
             />
           </Hero.TextBox>
         </Hero.Wrapper>

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Button from "../../Button/Button";
 import { MiddleStyle } from "./style";
-import arrow from "../../../assets/icons/arrowRight.svg";
+import arrow from "../../../assets/icons/arraowrightMiddle.png";
 import slide1Image from "../../../assets/images/slideImg2.svg";
 import slide2Image from "../../../assets/images/slideImg.svg";
 import slide3Image from "../../../assets/images/slideImg3.svg";

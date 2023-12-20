@@ -1,7 +1,12 @@
 import styled from "styled-components";
+import { Drawer } from "antd";
 
 export const HeaderStyle = styled.header`
   padding: 33.5px 0 34.5px 0;
+
+  .custom-drawer .ant-drawer-title {
+    display: none;
+  }
 `;
 HeaderStyle.Wrapper = styled.div`
   display: flex;
@@ -26,7 +31,7 @@ HeaderStyle.Nav = styled.nav`
     line-height: normal;
     transition: 0.2s ease-out;
   }
-  .navigation:focus-within{
+  .navigation:focus-within {
     transform: scale(1.1);
     font-weight: 700;
   }
@@ -37,13 +42,20 @@ HeaderStyle.IconsBox = styled.div`
 
   .iconLink {
   }
-
 `;
 
 HeaderStyle.Icons = styled.img`
   width: 28px;
   height: 28px;
-  cursor: pointer; 
+  cursor: pointer;
 `;
-
-
+export const CustomDrawer = styled(Drawer)`
+  && .ant-drawer-title {
+    color: #000;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+`;

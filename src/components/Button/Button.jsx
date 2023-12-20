@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import { MainButton } from "./style";
 
 const Button = ({
@@ -12,11 +12,20 @@ const Button = ({
   borderradius,
   fontweight,
   fontsize,
-  Children
+  height,
+  onClick, 
+  children 
 }) => {
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    }
+  };
+
   return (
     <MainButton
       width={width}
+      height={height}
       color={color}
       backgroundcolor={backgroundcolor}
       borderradius={borderradius}
@@ -25,9 +34,10 @@ const Button = ({
       allmargin={allmargin}
       fontweight={fontweight}
       fontsize={fontsize}
+      onClick={handleClick} 
     >
       {text || ""}
-      {Children}
+      {children}
     </MainButton>
   );
 };

@@ -41,6 +41,7 @@ const ProductItem = ({
           text="Add to cart"
           color="#B88E2F"
           fontweight="600"
+          height='48px'
         />
         <Product.PositionIconsBox>
           <Product.PositionTitleIconsBox>

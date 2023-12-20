@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const MainButton = styled.button`
   width: ${({ width }) => width || "100%"};
+  height: ${({ height }) => height || "100%"};
   color: ${({ color }) => color || "#000"};
   background-color: ${({ backgroundcolor }) => backgroundcolor || "#fff"};
   border-radius: ${({ borderradius }) => borderradius || ""};
