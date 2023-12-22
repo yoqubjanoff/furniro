@@ -28,7 +28,8 @@ const Input = ({
   focused,
   borderinput,
   placeholder,
-  paddinginput
+  paddinginput,
+  fontsizeheader
 }) => {
   const [mouse, setMouse] = useState(false);
   const [blur, setBlur] = useState(false);
@@ -54,9 +55,9 @@ const Input = ({
     <Container.Wrap width={width} margin={margin}>
       {header && (
         <Container.Header
+        fontsizeheader={fontsizeheader}
           hc={hc}
           error={error}
-          active={focused ? "true" : blur ? "true" : undefined}
           onClick={() => {
             setBlur(true);
             inputRef?.current?.focus();
@@ -99,7 +100,7 @@ const Input = ({
           ref={inputRef}
           borderinput={borderinput}
           placeholder={placeholder}
-		  paddinginput={paddinginput}
+		      paddinginput={paddinginput}
         />
         {prefix && <Icon height={height}>{prefix}</Icon>}
 

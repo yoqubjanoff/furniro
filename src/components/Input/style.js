@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: ${({ width }) => (width ? width : "453px")};
-  height: ${({ height }) => (height ? height : "60px")};
+  width: ${({ width }) => (width ? width : "100%")};
+  height: ${({ height }) => (height ? height : "")};
   border-radius: ${({ br }) => (br ? br : "12px")};
   outline: none;
   display: flex;
@@ -11,7 +11,6 @@ export const Container = styled.div`
   align-items: center;
   position: relative;
   background: #fff;
-  padding: 0 10px;
   border: ${({ error, active }) =>
     error
       ? "1px solid #FF5959"
@@ -32,14 +31,9 @@ Container.Wrap = styled.div`
 `;
 Container.Header = styled.div`
   color: ${({ hc }) => (hc ? hc : "#0d3b3f")};
-  font-size: ${({ active }) => (active ? "13px" : "16px")};
+  font-size: 16px;
   font-style: normal;
-  font-weight: 600;
-  position: absolute;
-  top: ${({ active }) => (active ? "-20px" : "22px")};
-  left: 20px;
-  transition: 0.4s all;
-  z-index: 1;
+  font-weight: 500;
 `;
 
 Container.Input = styled.input`

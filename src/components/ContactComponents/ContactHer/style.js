@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import shopBg from "../../../assets/images/aboutHerobg.jpg";
 
-export const ShopHeaderStyle = styled.section`
+export const Contacther = styled.section`
   background-image: url(${shopBg});
   background-repeat: no-repeat;
   background-position: center;
@@ -9,26 +9,26 @@ export const ShopHeaderStyle = styled.section`
   padding: 121px 0 97px 0;
 `;
 
-ShopHeaderStyle.Container = styled.div`
+Contacther.Container = styled.div`
   width: 100%;
   max-width: 1236px;
   margin: 0 auto;
 `;
-ShopHeaderStyle.Wrapper = styled.div`
+Contacther.Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 `;
-ShopHeaderStyle.Title = styled.h2`
+Contacther.Title = styled.h2`
   color: #000;
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 `;
-ShopHeaderStyle.Navigation = styled.div`
+Contacther.Navigation = styled.div`
   display: flex;
   align-items: center;
   gap: 6px;
@@ -47,11 +47,11 @@ ShopHeaderStyle.Navigation = styled.div`
     line-height: normal;
   }
 `;
-ShopHeaderStyle.ArrowRigt = styled.img`
+Contacther.ArrowRigt = styled.img`
 width: 20px;
 height: 20px;
 `;
-ShopHeaderStyle.Logotip = styled.img`
+Contacther.Logotip = styled.img`
 width: 77px;
 height: 77px;
 `;

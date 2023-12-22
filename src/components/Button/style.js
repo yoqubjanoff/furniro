@@ -12,4 +12,5 @@ export const MainButton = styled.button`
   font-size: ${({ fontsize }) => fontsize || "16px"};
   font-weight: ${({ fontweight }) => fontweight || "400"};
   cursor: pointer;
+  font-family: Poppins;
 `;

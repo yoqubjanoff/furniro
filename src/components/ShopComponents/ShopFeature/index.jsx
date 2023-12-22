@@ -5,9 +5,9 @@ import nishon from '../../../assets/icons/nishon.png'
 import handle from '../../../assets/icons/shipping.png'
 import admin from '../../../assets/icons/colcenter.png'
 
-const ShopFeature = () => {
+const ShopFeature = ({marginbottom}) => {
   return (
-    <Feature>
+    <Feature marginbottom={marginbottom}>
       <Feature.Container>
         <Feature.Wrapper>
           <Feature.MiddleBox>

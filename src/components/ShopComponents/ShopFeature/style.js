@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Feature = styled.section`
   padding: 100px 0;
+  margin-bottom: ${({ marginbottom }) => (marginbottom ? `${marginbottom}px` : '0')};
   background-color: #faf3ea;
 `;
 
