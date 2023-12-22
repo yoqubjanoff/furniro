@@ -73,6 +73,7 @@ const Input = ({
         onMouseLeave={() => setMouse(false)}
         onFocus={() => setBlur(true)}
         onBlur={onBlurFunction}
+        borderinput={borderinput}
         padding={padding}
         danger={danger}
         success={success}
@@ -98,11 +99,10 @@ const Input = ({
           type={type}
           name={name}
           ref={inputRef}
-          borderinput={borderinput}
           placeholder={placeholder}
 		      paddinginput={paddinginput}
         />
-        {prefix && <Icon height={height}>{prefix}</Icon>}
+        {prefix && <Icon height={height} src={prefix}/>}
 
         {error && <Container.Error>{error}</Container.Error>}
       </Container>

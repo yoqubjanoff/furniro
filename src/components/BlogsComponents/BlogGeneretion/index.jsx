@@ -10,7 +10,6 @@ const BlogGeneretion = ({ mainImg, mainTitle, desc, propslink,margin}) => {
     <GenericStyle margin={margin}>
       <GenericStyle.Wrapper>
         <GenericStyle.ImageBox>
-          <GenericStyle.ImageBox  />
           <GenericStyle.MainImage src={mainImg} />
         </GenericStyle.ImageBox>
         <GenericStyle.WoodBox>
@@ -20,7 +19,7 @@ const BlogGeneretion = ({ mainImg, mainTitle, desc, propslink,margin}) => {
         </GenericStyle.WoodBox>
         <GenericStyle.WoodTittle>{mainTitle}</GenericStyle.WoodTittle>
         <GenericStyle.WoodDesc>{desc}</GenericStyle.WoodDesc>
-        <Link to={`${propslink}`} className='generic-link'>Read more</Link>
+        <Link to='/read-more' className='generic-link'>Read more</Link>
       </GenericStyle.Wrapper>
     </GenericStyle>
   );

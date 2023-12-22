@@ -4,6 +4,7 @@ import Home from "./views/Home/Home"
 import Shop from "./views/Shop/Shop"
 import Contact from "./views/Contact/Contact"
 import Blog from "./views/Blog"
+import ReadMore from "./views/ReadMore"
 
 
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/shop" element={<Shop/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/blog" element={<Blog/>}/>
+        <Route path="/read-more" element={<ReadMore/>}/>
       </Route>
     )
   )

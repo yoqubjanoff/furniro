@@ -6,6 +6,7 @@ export const Container = styled.div`
   border-radius: ${({ br }) => (br ? br : "12px")};
   outline: none;
   display: flex;
+  border: ${({ borderinput }) => borderinput || "1px solid #9F9F9F;"};
   padding: ${({ padding }) => (padding ? padding : "0")};
   background-color: ${({ bg }) => (bg ? bg : "inherit")};
   align-items: center;
@@ -39,7 +40,6 @@ Container.Header = styled.div`
 Container.Input = styled.input`
   width: 100%;
   height: 70%;
-  border: ${({ borderinput }) => borderinput || "1px solid #9F9F9F;"};
   outline: none;
   display: flex;
   appearance: none;
@@ -51,6 +51,7 @@ Container.Input = styled.input`
   padding: ${({ paddinginput }) => paddinginput || "0 0 0 0"};
   font-size: 16px;
   font-style: normal;
+  border: none;
   font-weight: 500;
   &::placeholder {
     color: ${({ placeholderColor }) =>
@@ -77,10 +78,9 @@ Container.Error = styled.div`
   text-align: left;
 `;
 
-export const Icon = styled.div`
-  height: 32px;
-  margin: ${({ margin }) => (margin ? margin : "0 5px")};
-  display: flex;
-  align-items: center;
-  justify-content: center;
+export const Icon = styled.img`
+  height: 24px;
+  width: 24px;
+  margin: ${({ margin }) => (margin ? margin : "0 10px")};
+
 `;

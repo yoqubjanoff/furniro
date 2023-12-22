@@ -25,10 +25,12 @@ GenericStyle.Wrapper = styled.div`
 
 GenericStyle.ImageBox = styled.div`
   width: 100%;
+  height: 500px;
 `;
 
 GenericStyle.MainImage = styled.img`
   width: 100%;
+  height: 100%;
 `;
 
 GenericStyle.WoodBox = styled.div`
