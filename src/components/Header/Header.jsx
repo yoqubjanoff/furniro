@@ -84,41 +84,65 @@ const Header = () => {
           <CardWrapper>
             <CardWrapper.TopBox>
               <CardWrapper.TopMiddleBox>
-              <CardWrapper.TopImgBox >
-                <CardWrapper.TopImg src={mebel} />
-              </CardWrapper.TopImgBox >
-              <CardWrapper.TopTextbox>
-                <CardWrapper.TopTitle>Asgaard sofa</CardWrapper.TopTitle>
-                <CardWrapper.TopCount>
-                  <CardWrapper.TopNum>1</CardWrapper.TopNum>
-                  <CardWrapper.TopPrice>Rs. 270,000.00</CardWrapper.TopPrice>
-                </CardWrapper.TopCount>
-              </CardWrapper.TopTextbox>
-              <CardWrapper.TopDelet src={delet}/>
+                <CardWrapper.TopImgBox>
+                  <CardWrapper.TopImg src={mebel} />
+                </CardWrapper.TopImgBox>
+                <CardWrapper.TopTextbox>
+                  <CardWrapper.TopTitle>Asgaard sofa</CardWrapper.TopTitle>
+                  <CardWrapper.TopCount>
+                    <CardWrapper.TopNum>1</CardWrapper.TopNum>
+                    <CardWrapper.TopPrice>Rs. 270,000.00</CardWrapper.TopPrice>
+                  </CardWrapper.TopCount>
+                </CardWrapper.TopTextbox>
+                <CardWrapper.TopDelet src={delet} />
               </CardWrapper.TopMiddleBox>
               <CardWrapper.TopMiddleBox>
-              <CardWrapper.TopImgBox >
-                <CardWrapper.TopImg src={mebel2} />
-              </CardWrapper.TopImgBox >
-              <CardWrapper.TopTextbox>
-                <CardWrapper.TopTitle>Asgaard sofa</CardWrapper.TopTitle>
-                <CardWrapper.TopCount>
-                  <CardWrapper.TopNum>1</CardWrapper.TopNum>
-                  <CardWrapper.TopPrice>Rs. 270,000.00</CardWrapper.TopPrice>
-                </CardWrapper.TopCount>
-              </CardWrapper.TopTextbox>
-              <CardWrapper.TopDelet src={delet}/>
+                <CardWrapper.TopImgBox>
+                  <CardWrapper.TopImg src={mebel2} />
+                </CardWrapper.TopImgBox>
+                <CardWrapper.TopTextbox>
+                  <CardWrapper.TopTitle>Asgaard sofa</CardWrapper.TopTitle>
+                  <CardWrapper.TopCount>
+                    <CardWrapper.TopNum>1</CardWrapper.TopNum>
+                    <CardWrapper.TopPrice>Rs. 270,000.00</CardWrapper.TopPrice>
+                  </CardWrapper.TopCount>
+                </CardWrapper.TopTextbox>
+                <CardWrapper.TopDelet src={delet} />
               </CardWrapper.TopMiddleBox>
             </CardWrapper.TopBox>
-            <CardWrapper.BottomBox >
+            <CardWrapper.BottomBox>
               <CardWrapper.BottomItogBox>
                 <CardWrapper.ItogDesc>Subtotal</CardWrapper.ItogDesc>
                 <CardWrapper.ItogPrice>Rs. 520,000.00</CardWrapper.ItogPrice>
               </CardWrapper.BottomItogBox>
               <CardWrapper.BottomBoxButons>
-                <Button border='1px solid #000' borderradius='50px' text={'Cart'} allpadding='6px 30px' width='87px' fontsize='12px'/>
-                <Button border='1px solid #000' borderradius='50px' text={'Checkout'} allpadding='6px 30px' width='118px' fontsize='12px'/>
-                <Button border='1px solid #000' borderradius='50px' text={'Comparison'} allpadding='6px 30px' width='135px' fontsize='12px'/>
+                <Button
+                  border="1px solid #000"
+                  borderradius="50px"
+                  text={"Cart"}
+                  allpadding="6px 30px"
+                  width="87px"
+                  fontsize="12px"
+                />
+                <Button
+                  border="1px solid #000"
+                  borderradius="50px"
+                  text={"Checkout"}
+                  allpadding="6px 30px"
+                  width="118px"
+                  fontsize="12px"
+                />
+                <Link to='/comparsion'>
+                  <Button
+                   onClick={onClose}
+                    border="1px solid #000"
+                    borderradius="50px"
+                    text={"Comparison"}
+                    allpadding="6px 30px"
+                    width="135px"
+                    fontsize="12px"
+                  />
+                </Link>
               </CardWrapper.BottomBoxButons>
             </CardWrapper.BottomBox>
           </CardWrapper>
