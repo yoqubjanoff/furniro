@@ -24,10 +24,10 @@ const Footer = () => {
                 <Link className="footer-link" to="/shop">
                   Shop
                 </Link>
-                <Link className="footer-link" to="/">
+                <Link className="footer-link" to="/about">
                   About
                 </Link>
-                <Link className="footer-link" to="/">
+                <Link className="footer-link" to="/contact">
                   Contact
                 </Link>
               </FooterStyle.FooterLink>
