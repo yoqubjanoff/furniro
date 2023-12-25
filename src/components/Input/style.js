@@ -39,7 +39,6 @@ Container.Header = styled.div`
 
 Container.Input = styled.input`
   width: 100%;
-  height: 70%;
   outline: none;
   display: flex;
   appearance: none;

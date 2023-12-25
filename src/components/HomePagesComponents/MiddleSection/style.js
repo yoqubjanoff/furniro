@@ -172,4 +172,4 @@ MiddleStyle.CustomArrowLeft = styled.img`
   width: 24px;
   height: 24px;
 `;
-MiddleStyle.CustomArrowRight = styled.img``;
+

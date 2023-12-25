@@ -37,7 +37,7 @@ const Header = () => {
             <Link className="navigation" to="/shop">
               Shop
             </Link>
-            <Link className="navigation" to="/">
+            <Link className="navigation" to="/about">
               About
             </Link>
             <Link className="navigation" to="/contact">
@@ -78,7 +78,7 @@ const Header = () => {
               <HeaderStyle.Icons onClick={onClose} src={bug} alt="user icon" />
             </Space>
           }
-          style={{ height: "fit-content" }}
+          style={{ height: "100vh" }}
           className="custom-drawer"
         >
           <CardWrapper>
@@ -116,25 +116,31 @@ const Header = () => {
                 <CardWrapper.ItogPrice>Rs. 520,000.00</CardWrapper.ItogPrice>
               </CardWrapper.BottomItogBox>
               <CardWrapper.BottomBoxButons>
-                <Button
-                  border="1px solid #000"
-                  borderradius="50px"
-                  text={"Cart"}
-                  allpadding="6px 30px"
-                  width="87px"
-                  fontsize="12px"
-                />
-                <Button
-                  border="1px solid #000"
-                  borderradius="50px"
-                  text={"Checkout"}
-                  allpadding="6px 30px"
-                  width="118px"
-                  fontsize="12px"
-                />
-                <Link to='/comparsion'>
+                <Link to="/cart">
                   <Button
-                   onClick={onClose}
+                    onClick={onClose}
+                    border="1px solid #000"
+                    borderradius="50px"
+                    text={"Cart"}
+                    allpadding="6px 30px"
+                    width="87px"
+                    fontsize="12px"
+                  />
+                </Link>
+                <Link to="/checkout">
+                  <Button
+                    onClick={onClose}
+                    border="1px solid #000"
+                    borderradius="50px"
+                    text={"Checkout"}
+                    allpadding="6px 30px"
+                    width="118px"
+                    fontsize="12px"
+                  />
+                </Link>
+                <Link to="/comparsion">
+                  <Button
+                    onClick={onClose}
                     border="1px solid #000"
                     borderradius="50px"
                     text={"Comparison"}

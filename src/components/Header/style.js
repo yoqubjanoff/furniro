@@ -69,14 +69,14 @@ export const CustomDrawer = styled(Drawer)`
 
 export const CardWrapper = styled.div``;
 CardWrapper.TopBox = styled.div`
-  margin-bottom: 250px;
+  height: 100%;
 `;
 CardWrapper.TopMiddleBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 `;
 CardWrapper.TopImgBox = styled.div`
   width: 105px;

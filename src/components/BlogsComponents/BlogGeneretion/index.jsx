@@ -19,7 +19,7 @@ const BlogGeneretion = ({ mainImg, mainTitle, desc, propslink,margin}) => {
         </GenericStyle.WoodBox>
         <GenericStyle.WoodTittle>{mainTitle}</GenericStyle.WoodTittle>
         <GenericStyle.WoodDesc>{desc}</GenericStyle.WoodDesc>
-        <Link to='/read-more' className='generic-link'>Read more</Link>
+        <Link to='/about' className='generic-link'>Read more</Link>
       </GenericStyle.Wrapper>
     </GenericStyle>
   );

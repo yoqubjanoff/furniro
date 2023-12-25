@@ -6,6 +6,8 @@ import Contact from "./views/Contact/Contact"
 import Blog from "./views/Blog"
 import ReadMore from "./views/ReadMore"
 import Comparsion from "./views/Comparsion"
+import Cart from "./views/CartPage"
+import Checkout from "./views/Checkout"
 
 
 
@@ -18,8 +20,10 @@ function App() {
         <Route path="/shop" element={<Shop/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/blog" element={<Blog/>}/>
-        <Route path="/read-more" element={<ReadMore/>}/>
+        <Route path="/about" element={<ReadMore/>}/>
         <Route path="/comparsion" element={<Comparsion/>}/>
+        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/checkout" element={<Checkout/>}/>
       </Route>
     )
   )
