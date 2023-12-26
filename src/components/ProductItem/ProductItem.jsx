@@ -4,6 +4,7 @@ import share from "../../assets/icons/share.svg";
 import share1 from "../../assets/icons/share2.svg";
 import heart from "../../assets/icons/whiteHeart.svg";
 import { Product } from "./style";
+import { Link } from "react-router-dom";
 
 const ProductItem = ({
   discount,
@@ -15,10 +16,12 @@ const ProductItem = ({
 }) => {
   return (
     <Product>
-       {discount !== "New" ? (
-        (discount && <Product.DiscoutBox>
+      {discount !== "New" ? (
+        discount && (
+          <Product.DiscoutBox>
             <Product.Element>{discount}</Product.Element>
-          </Product.DiscoutBox>)
+          </Product.DiscoutBox>
+        )
       ) : (
         <Product.DiscoutBox2>
           <Product.Element>{discount}</Product.Element>
@@ -34,6 +37,17 @@ const ProductItem = ({
         </Product.PriceBox>
       </Product.DescBox>
       <Product.PositionBox>
+        <Link to='/view'>
+          <Button
+            backgroundcolor="#fff"
+            width="202px"
+            allpadding="12px 52px 12px 52px"
+            text="View"
+            color="#B88E2F"
+            fontweight="600"
+            height="48px"
+          />
+        </Link>
         <Button
           backgroundcolor="#fff"
           width="202px"
@@ -41,7 +55,7 @@ const ProductItem = ({
           text="Add to cart"
           color="#B88E2F"
           fontweight="600"
-          height='48px'
+          height="48px"
         />
         <Product.PositionIconsBox>
           <Product.PositionTitleIconsBox>
@@ -63,4 +77,3 @@ const ProductItem = ({
 };
 
 export default ProductItem;
- 

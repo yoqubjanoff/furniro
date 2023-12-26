@@ -8,6 +8,7 @@ import ReadMore from "./views/ReadMore"
 import Comparsion from "./views/Comparsion"
 import Cart from "./views/CartPage"
 import Checkout from "./views/Checkout"
+import View from "./views/View"
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/comparsion" element={<Comparsion/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/checkout" element={<Checkout/>}/>
+        <Route path="/view" element={<View/>}/>
       </Route>
     )
   )
