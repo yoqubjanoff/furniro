@@ -7,13 +7,33 @@ import view4 from "../../../assets/images/view4.jpg";
 import view5 from "../../../assets/images/view5.png";
 import star from "../../../assets/icons/star.png";
 import Button from "../../Button/Button";
+import facebook from "../../../assets/icons/facebook.svg";
+import linkedin from "../../../assets/icons/linkedin.svg";
+import twitter from "../../../assets/icons/twitter.svg";
+import { Link } from "react-router-dom";
 
 const ViewHer = () => {
   const [activeButton, setActiveButton] = useState(1);
+  const [selectedColor, setSelectedColor] = useState(null);
 
   const handlePagination = (pageNumber) => {
     setActiveButton(pageNumber);
   };
+  const handleColorChange = (color) => {
+    setSelectedColor(color);
+  };
+  const [count, setCount] = useState(1);
+
+  const handleDecrease = () => {
+    if (count > 1) {
+      setCount(count - 1);
+    }
+  };
+
+  const handleIncrease = () => {
+    setCount(count + 1);
+  };
+
   return (
     <ViewHerStyle>
       <ViewHerStyle.Container>
@@ -75,8 +95,84 @@ const ViewHer = () => {
               </ViewHerStyle.BtnSizeBox>
               <ViewHerStyle.Info>Color</ViewHerStyle.Info>
               <ViewHerStyle.ColorBox>
+                <ViewHerStyle.Label1
+                  htmlFor="color1"
+                  id="color1"
+                  checked={selectedColor === "color1"}
+                  onClick={() => handleColorChange("color1")}
+                >
+                  <ViewHerStyle.ColorInput1 type="radio" id="color1" />
+                </ViewHerStyle.Label1>
+
+                <ViewHerStyle.Label2
+                  htmlFor="color2"
+                  id="color2"
+                  checked={selectedColor === "color2"}
+                  onClick={() => handleColorChange("color2")}
+                >
+                  <ViewHerStyle.ColorInput2 type="radio" id="color2" />
+                </ViewHerStyle.Label2>
+
+                <ViewHerStyle.Label3
+                  htmlFor="color3"
+                  id="color3"
+                  checked={selectedColor === "color3"}
+                  onClick={() => handleColorChange("color3")}
+                >
+                  <ViewHerStyle.ColorInput3 type="radio" id="color3" />
+                </ViewHerStyle.Label3>
               </ViewHerStyle.ColorBox>
+              <ViewHerStyle.ButtonsBox>
+                <ViewHerStyle.AddBox>
+                  <Button text={"-"} width={"9px"} onClick={handleDecrease} />
+                  <span>{count}</span>
+                  <Button text={"+"} width={"11px"} onClick={handleIncrease} />
+                </ViewHerStyle.AddBox>
+                <Button
+                  text={"Add To Cart"}
+                  allpadding={"17px 48px"}
+                  width={"215px"}
+                  border={"1px solid #000"}
+                  borderradius={"15px"}
+                />
+                <Button
+                  text={"+ Compare"}
+                  allpadding={"17px 48px"}
+                  width={"215px"}
+                  border={"1px solid #000"}
+                  borderradius={"15px"}
+                />
+              </ViewHerStyle.ButtonsBox>
             </ViewHerStyle.LeftTopbox>
+            <ViewHerStyle.LeftInfoBox>
+              <ViewHerStyle.InfoRow>
+                <ViewHerStyle.InfoDesc>SKU</ViewHerStyle.InfoDesc>
+                <ViewHerStyle.InfoDesc>Category</ViewHerStyle.InfoDesc>
+                <ViewHerStyle.InfoDesc>Tags</ViewHerStyle.InfoDesc>
+                <ViewHerStyle.InfoDesc>Share</ViewHerStyle.InfoDesc>
+              </ViewHerStyle.InfoRow>
+              <ViewHerStyle.InfoRow>
+                <ViewHerStyle.InfoDesc>: SS001</ViewHerStyle.InfoDesc>
+                <ViewHerStyle.InfoDesc>: Sofas</ViewHerStyle.InfoDesc>
+                <ViewHerStyle.InfoDesc>
+                  : Sofa, Chair, Home, Shop
+                </ViewHerStyle.InfoDesc>
+                <ViewHerStyle.InfoDesc>
+                  :
+                  <div className="iconbox">
+                  <Link to="https://t.me/SlaveOfAllah91">
+                    <img className="linkView" src={facebook} alt="social icon" />
+                  </Link>
+                  <Link to="https://www.linkedin.com/feed/">
+                    <img className="linkView" src={linkedin} alt="social icon" />
+                  </Link>
+                  <Link to="https://www.linkedin.com/feed/">
+                    <img className="linkView" src={twitter} alt="social icon" />
+                  </Link>
+                  </div>
+                </ViewHerStyle.InfoDesc>
+              </ViewHerStyle.InfoRow>
+            </ViewHerStyle.LeftInfoBox>
           </ViewHerStyle.LeftBox>
         </ViewHerStyle.Wrapp>
       </ViewHerStyle.Container>
