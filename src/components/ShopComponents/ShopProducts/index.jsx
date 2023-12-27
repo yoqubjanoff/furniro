@@ -175,6 +175,7 @@ const ShopProducts = () => {
               color={activeButton === "Next" ? "#FFFFFF" : "#000000"}
               borderradius="10px"
               onClick={() => handlePagination("Next")}
+              allpadding={'16px 27px 16px 28px'}
             />
           </ShopProStyle.Bottom>
         </ShopProStyle.Wrap>
